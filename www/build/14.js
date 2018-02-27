@@ -1,14 +1,14 @@
 webpackJsonp([14],{
 
-/***/ 288:
+/***/ 329:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CadastroMenuPageModule", function() { return CadastroMenuPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatConfigPageModule", function() { return ChatConfigPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cadastro_menu__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chat_config__ = __webpack_require__(212);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CadastroMenuPageModule = (function () {
-    function CadastroMenuPageModule() {
+var ChatConfigPageModule = (function () {
+    function ChatConfigPageModule() {
     }
-    CadastroMenuPageModule = __decorate([
+    ChatConfigPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__cadastro_menu__["a" /* CadastroMenuPage */],
+                __WEBPACK_IMPORTED_MODULE_2__chat_config__["a" /* ChatConfigPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__cadastro_menu__["a" /* CadastroMenuPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__chat_config__["a" /* ChatConfigPage */]),
             ],
         })
-    ], CadastroMenuPageModule);
-    return CadastroMenuPageModule;
+    ], ChatConfigPageModule);
+    return ChatConfigPageModule;
 }());
 
-//# sourceMappingURL=cadastro-menu.module.js.map
+//# sourceMappingURL=chat-config.module.js.map
 
 /***/ })
 

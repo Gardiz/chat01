@@ -1,14 +1,14 @@
 webpackJsonp([8],{
 
-/***/ 294:
+/***/ 335:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FerramentasLanternaPageModule", function() { return FerramentasLanternaPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FerramentasMenuPageModule", function() { return FerramentasMenuPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ferramentas_lanterna__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ferramentas_menu__ = __webpack_require__(106);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FerramentasLanternaPageModule = (function () {
-    function FerramentasLanternaPageModule() {
+var FerramentasMenuPageModule = (function () {
+    function FerramentasMenuPageModule() {
     }
-    FerramentasLanternaPageModule = __decorate([
+    FerramentasMenuPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__ferramentas_lanterna__["a" /* FerramentasLanternaPage */],
+                __WEBPACK_IMPORTED_MODULE_2__ferramentas_menu__["a" /* FerramentasMenuPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__ferramentas_lanterna__["a" /* FerramentasLanternaPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__ferramentas_menu__["a" /* FerramentasMenuPage */]),
             ],
         })
-    ], FerramentasLanternaPageModule);
-    return FerramentasLanternaPageModule;
+    ], FerramentasMenuPageModule);
+    return FerramentasMenuPageModule;
 }());
 
-//# sourceMappingURL=ferramentas-lanterna.module.js.map
+//# sourceMappingURL=ferramentas-menu.module.js.map
 
 /***/ })
 

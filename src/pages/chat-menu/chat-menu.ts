@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { ChatPage } from '../chat/chat';
 import { AlertController } from 'ionic-angular'; //Mensagem na tela
+import { SignupPage } from '../signup/signup';
 /**
  * Generated class for the ChatMenuPage page.
  *
@@ -32,6 +33,10 @@ export class ChatMenuPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChatMenuPage');
+  }
+
+  onSignup(): void{
+    this.navCtrl.push(SignupPage);
   }
 
 

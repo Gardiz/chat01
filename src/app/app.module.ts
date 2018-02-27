@@ -21,9 +21,32 @@ import { FerramentasLanternaPage } from '../pages/ferramentas-lanterna/ferrament
 import { FerramentasMenuPage } from '../pages/ferramentas-menu/ferramentas-menu';
 import { FerramentasPanicoPage } from '../pages/ferramentas-panico/ferramentas-panico';
 import { GeoPage } from '../pages/geo/geo';
-import { GeoConfigPage } from '../pages/geo-config/geo-config';
 import { GeoMenuPage } from '../pages/geo-menu/geo-menu';
+import { GeoConfigPage } from '../pages/geo-config/geo-config';
 import { NoticiasPage } from '../pages/noticias/noticias';
+
+import{ FirebaseAppConfig, AngularFireModule} from 'angularfire2'; //Configurando Firebase Database
+
+import { SignupPage } from '../pages/signup/signup';
+
+//import { AngularFireModule, FirebaseAppConfig } from 'angularfire2';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+//import { UserService } from '../providers/user/user.service';
+import { UserServiceProvider } from '../providers/user-service/user-service';
+
+
+
+
+//Configurando Firebase Database
+const firebaseAppConfig: FirebaseAppConfig ={
+  apiKey: "AIzaSyClmAFjCmu7FHeFDg3pW5xjS-45nXk_wMA",
+  authDomain: "chat01-a91de.firebaseapp.com",  //para trabalhar com autenticação
+  databaseURL: "https://chat01-a91de.firebaseio.com", //para trabalhar com Realtimedatabase
+  //projectId: "chat01-a91de",
+  storageBucket: "chat01-a91de.appspot.com", //Para trabalhar com storage(arquivos)
+  messagingSenderId: "958990028732" //para trabalhar com  Cloud Message 
+};
 
 @NgModule({
   declarations: [
@@ -45,10 +68,13 @@ import { NoticiasPage } from '../pages/noticias/noticias';
     FerramentasPanicoPage,
     GeoPage,
     GeoConfigPage,
-    GeoMenuPage
+    GeoMenuPage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(firebaseAppConfig), //Configurando Firebase Database
+    AngularFireDatabaseModule, //Configurando Firebase Database
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -71,12 +97,14 @@ import { NoticiasPage } from '../pages/noticias/noticias';
     FerramentasPanicoPage,
     GeoPage,
     GeoConfigPage,
-    GeoMenuPage
+    GeoMenuPage,
+    SignupPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},     
+    UserServiceProvider
   ]
 })
 export class AppModule {}

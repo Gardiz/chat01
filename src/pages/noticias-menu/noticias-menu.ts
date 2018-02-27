@@ -42,6 +42,8 @@ export class NoticiasMenuPage {
     console.log('ionViewDidLoad NoticiasMenuPage');
   }
 
+
+
   abrirCadastro(){
     this.navCtrl.push(CadastroMenuPage);
   }

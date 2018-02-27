@@ -1,14 +1,14 @@
 webpackJsonp([2],{
 
-/***/ 300:
+/***/ 341:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IntroducaoPageModule", function() { return IntroducaoPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoticiasMenuPageModule", function() { return NoticiasMenuPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__introducao__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__noticias_menu__ = __webpack_require__(108);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var IntroducaoPageModule = (function () {
-    function IntroducaoPageModule() {
+var NoticiasMenuPageModule = (function () {
+    function NoticiasMenuPageModule() {
     }
-    IntroducaoPageModule = __decorate([
+    NoticiasMenuPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__introducao__["a" /* IntroducaoPage */],
+                __WEBPACK_IMPORTED_MODULE_2__noticias_menu__["a" /* NoticiasMenuPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__introducao__["a" /* IntroducaoPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__noticias_menu__["a" /* NoticiasMenuPage */]),
             ],
         })
-    ], IntroducaoPageModule);
-    return IntroducaoPageModule;
+    ], NoticiasMenuPageModule);
+    return NoticiasMenuPageModule;
 }());
 
-//# sourceMappingURL=introducao.module.js.map
+//# sourceMappingURL=noticias-menu.module.js.map
 
 /***/ })
 

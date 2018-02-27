@@ -1,6 +1,6 @@
-webpackJsonp([15],{
+webpackJsonp([16],{
 
-/***/ 100:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45,14 +45,15 @@ var CadastroMenuPage = (function () {
 
 /***/ }),
 
-/***/ 101:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChatMenuPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chat_chat__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chat_chat__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup_signup__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -66,6 +67,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
  //Mensagem na tela
+
 /**
  * Generated class for the ChatMenuPage page.
  *
@@ -85,6 +87,9 @@ var ChatMenuPage = (function () {
     }
     ChatMenuPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad ChatMenuPage');
+    };
+    ChatMenuPage.prototype.onSignup = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__signup_signup__["a" /* SignupPage */]);
     };
     ChatMenuPage.prototype.abrirCadastroUsuario = function () {
         var alert = this.alertCtrl.create({
@@ -128,19 +133,21 @@ var ChatMenuPage = (function () {
     };
     ChatMenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-chat-menu',template:/*ion-inline-start:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\pages\chat-menu\chat-menu.html"*/'<!--\n  Generated template for the ChatMenuPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      <button ion-button icon-only menuToggle>\n          <ion-icon name="menu"></ion-icon>\n        </button>\n    <ion-title>Conversas</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <!-->MENU\n  <-->\n  <ion-menu id="menuChat" [content]="content">\n      <ion-header>\n        <ion-toolbar>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>         \n            <button ion-item (click)="abrirCadastroUsuario()">           \n                Usuários\n            </button>           \n              <button ion-item (click)="abrirCadastroPerfil()">              \n                  Perfis\n              </button>            \n                <button ion-item (click)="abrirCadastroGrupo()">                \n                    Grupos\n                </button>             \n                  <button ion-item (click)="abrirCadastroPermissao()">                \n                      Permissões\n                  </button>\n                  <button ion-item menuClose>\n                      Close Menu\n                    </button>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n\n    <ion-nav id="nav" #content [root]="rootPage"></ion-nav>\n\n    <!-->FIM DO MENU\n    <-->\n</ion-content>\n'/*ion-inline-end:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\pages\chat-menu\chat-menu.html"*/,
+            selector: 'page-chat-menu',template:/*ion-inline-start:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\pages\chat-menu\chat-menu.html"*/'<!--\n  Generated template for the ChatMenuPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n      <button ion-button icon-only menuToggle>\n          <ion-icon name="menu"></ion-icon>\n        </button>\n    <ion-title>Conversas</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <!-->MENU\n  <-->\n  <ion-menu id="menuChat" [content]="content">\n      <ion-header>\n        <ion-toolbar>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>   \n            <button ion-item (click)="onSignup()">\n                Sign Up\n              </button>      \n            <button ion-item (click)="abrirCadastroUsuario()">           \n                Usuários\n            </button>           \n              <button ion-item (click)="abrirCadastroPerfil()">              \n                  Perfis\n              </button>            \n                <button ion-item (click)="abrirCadastroGrupo()">                \n                    Grupos\n                </button>             \n                  <button ion-item (click)="abrirCadastroPermissao()">                \n                      Permissões\n                  </button>\n                  <button ion-item menuClose>\n                      Close Menu\n                    </button>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n\n    <ion-nav id="nav" #content [root]="rootPage"></ion-nav>\n\n    <!-->FIM DO MENU\n    <-->\n</ion-content>\n'/*ion-inline-end:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\pages\chat-menu\chat-menu.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */]])
     ], ChatMenuPage);
     return ChatMenuPage;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=chat-menu.js.map
 
 /***/ }),
 
-/***/ 102:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -185,7 +192,79 @@ var ChatPage = (function () {
 
 /***/ }),
 
-/***/ 103:
+/***/ 105:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_user_service_user_service__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(16);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+ //para Form
+/**
+ * Generated class for the SignupPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SignupPage = (function () {
+    function SignupPage(navCtrl, navParams, formBuilder //para Form
+        , userServiceProvider) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.formBuilder = formBuilder; //para Form
+        this.userServiceProvider = userServiceProvider;
+        //VALIDAÇÃO DO FORMULÁRIO
+        var emailRegex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        this.signupForm = this.formBuilder.group({
+            name: ['', [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].minLength(3)]],
+            username: ['', [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].minLength(3)]],
+            email: ['', [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].pattern(emailRegex)])]],
+            password: ['', [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].minLength(6)]]
+        });
+        //FIM: VALIDAÇÃO DO FORMULÁRIO
+    }
+    SignupPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SignupPage');
+    };
+    SignupPage.prototype.onSubmit = function () {
+        console.log("Form submited!"); //Formulário enviado
+        console.log(this.signupForm.value); //Mostra os valores do Formulário enviado
+        this.userServiceProvider.create(this.signupForm.value)
+            .then(function () {
+            console.log("Usuário cadastrado com sucesso!");
+        });
+    };
+    SignupPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
+            selector: 'page-signup',template:/*ion-inline-start:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\pages\signup\signup.html"*/'<!--\n  Generated template for the SignupPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Sign Up</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <h1 text-center>\n    <ion-icon class="auth-icon" name="person-add" color="primary"></ion-icon>\n  </h1>\n\n\n\n\n  <form [formGroup]="signupForm" (ngSubmit)="onSubmit(); $event.preventDefault()">\n\n    <!-- Quando clicar no button submit, dispara o ng-submit    -->\n      <!-- signupForm é definido no .ts -->\n      <!-- $event.preventDefault() é opcional (do angular para garantir) -->\n      <ion-item>\n        <ion-icon name="person" item-start color="primary"></ion-icon>\n        <ion-input type="text" placeholder="Name" formControlName="name"></ion-input>\n      </ion-item>\n  \n      <ion-item>\n        <ion-icon name="at" item-start color="primary"></ion-icon>\n        <ion-input type="text" placeholder="Username" formControlName="username"></ion-input>\n      </ion-item>\n  \n      <ion-item>\n        <ion-icon name="mail" item-start color="primary"></ion-icon>\n        <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>\n      </ion-item>\n  \n      <ion-item>\n        <ion-icon name="lock" item-start color="primary"></ion-icon>\n        <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>\n      </ion-item>\n  \n      <br>\n      <button ion-button full type="submit" [disabled]="signupForm.invalid">Create Account</button>\n    <!--Enquanto signupForm é invalido o button tambem é desativo -->\n    </form>\n\n\n  <!-- FIM: ADIÇÃO DE UM FORMULÁRIO -->\n</ion-content>'/*ion-inline-end:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\pages\signup\signup.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */] //para Form
+             !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */] //para Form
+            ) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__providers_user_service_user_service__["a" /* UserServiceProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__providers_user_service_user_service__["a" /* UserServiceProvider */]) === "function" && _d || Object])
+    ], SignupPage);
+    return SignupPage;
+    var _a, _b, _c, _d;
+}());
+
+//# sourceMappingURL=signup.js.map
+
+/***/ }),
+
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -230,7 +309,7 @@ var FerramentasMenuPage = (function () {
 
 /***/ }),
 
-/***/ 104:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -275,18 +354,18 @@ var GeoMenuPage = (function () {
 
 /***/ }),
 
-/***/ 105:
+/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NoticiasMenuPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_about__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__introducao_introducao__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_menu_cadastro_menu__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__noticias_noticias__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_about__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__introducao_introducao__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_menu_cadastro_menu__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__noticias_noticias__ = __webpack_require__(109);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -342,19 +421,20 @@ var NoticiasMenuPage = (function () {
     };
     NoticiasMenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-noticias-menu',template:/*ion-inline-start:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\pages\noticias-menu\noticias-menu.html"*/'<!--\n  Generated template for the NoticiasMenuPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button icon-only menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-title>Notícias</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n  <!-->MENU\n  <-->\n    <ion-menu id="menuNoticias" [content]="content">\n      <ion-header>\n        <ion-toolbar>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>\n\n\n\n          <button ion-item (click)="abrirCadastro()">\n            Cadastro\n          </button>\n\n\n          <button ion-item (click)="abrirContact()">\n            Contato\n          </button>\n          <button ion-item (click)="abrirSobre()">\n            Sobre\n          </button>\n          <button ion-item (click)="abrirIntroducao()">\n            Introdução\n          </button>\n          <button ion-item menuClose>\n            Close Menu\n          </button>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n\n    <ion-nav id="nav" #content [root]="rootPage"></ion-nav>\n\n    <!-->FIM DO MENU\n    <-->\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\pages\noticias-menu\noticias-menu.html"*/,
+            selector: 'page-noticias-menu',template:/*ion-inline-start:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\pages\noticias-menu\noticias-menu.html"*/'<!--\n  Generated template for the NoticiasMenuPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button icon-only menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n\n    <ion-title>Notícias</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n  <!-->MENU\n  <-->\n    <ion-menu id="menuNoticias" [content]="content">\n      <ion-header>\n        <ion-toolbar>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>      \n          <button ion-item (click)="abrirCadastro()">\n            Cadastro\n          </button>\n          <button ion-item (click)="abrirContact()">\n            Contato\n          </button>\n          <button ion-item (click)="abrirSobre()">\n            Sobre\n          </button>\n          <button ion-item (click)="abrirIntroducao()">\n            Introdução\n          </button>\n          <button ion-item menuClose>\n            Close Menu\n          </button>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n\n    <ion-nav id="nav" #content [root]="rootPage"></ion-nav>\n\n    <!-->FIM DO MENU\n    <-->\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\pages\noticias-menu\noticias-menu.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */]])
     ], NoticiasMenuPage);
     return NoticiasMenuPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=noticias-menu.js.map
 
 /***/ }),
 
-/***/ 106:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -399,7 +479,7 @@ var NoticiasPage = (function () {
 
 /***/ }),
 
-/***/ 117:
+/***/ 119:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -412,72 +492,76 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 117;
+webpackEmptyAsyncContext.id = 119;
 
 /***/ }),
 
-/***/ 158:
+/***/ 160:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/cadastro-menu/cadastro-menu.module": [
-		288,
-		14
+		328,
+		15
 	],
 	"../pages/chat-config/chat-config.module": [
-		289,
-		13
+		329,
+		14
 	],
 	"../pages/chat-contatos/chat-contatos.module": [
-		290,
-		12
+		330,
+		13
 	],
 	"../pages/chat-menu/chat-menu.module": [
-		291,
-		11
+		331,
+		12
 	],
 	"../pages/chat/chat.module": [
-		292,
-		10
+		332,
+		11
 	],
 	"../pages/ferramentas-gravador/ferramentas-gravador.module": [
-		293,
-		9
+		333,
+		10
 	],
 	"../pages/ferramentas-lanterna/ferramentas-lanterna.module": [
-		294,
-		8
+		334,
+		9
 	],
 	"../pages/ferramentas-menu/ferramentas-menu.module": [
-		295,
-		7
+		335,
+		8
 	],
 	"../pages/ferramentas-panico/ferramentas-panico.module": [
-		296,
-		6
+		336,
+		7
 	],
 	"../pages/geo-config/geo-config.module": [
-		297,
-		5
+		337,
+		6
 	],
 	"../pages/geo-menu/geo-menu.module": [
-		298,
-		4
+		338,
+		5
 	],
 	"../pages/geo/geo.module": [
-		299,
-		3
+		339,
+		4
 	],
 	"../pages/introducao/introducao.module": [
-		300,
-		2
+		340,
+		3
 	],
 	"../pages/noticias-menu/noticias-menu.module": [
-		301,
-		1
+		341,
+		2
 	],
 	"../pages/noticias/noticias.module": [
-		302,
+		342,
+		1
+	],
+	"../pages/signup/signup.module": [
+		343,
 		0
 	]
 };
@@ -492,21 +576,21 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 158;
+webpackAsyncContext.id = 160;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 159:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__noticias_menu_noticias_menu__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chat_menu_chat_menu__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__geo_menu_geo_menu__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ferramentas_menu_ferramentas_menu__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__noticias_menu_noticias_menu__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chat_menu_chat_menu__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__geo_menu_geo_menu__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ferramentas_menu_ferramentas_menu__ = __webpack_require__(106);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -521,6 +605,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+//import { NavController } from 'ionic-angular';
+//import { CadastroMenuPage } from '../cadastro-menu/cadastro-menu';
+//import { ContactPage } from '../contact/contact';
+//import { AboutPage } from '../about/about';
+//import { IntroducaoPage } from '../introducao/introducao';
 var TabsPage = (function () {
     function TabsPage() {
         this.tab1Root = __WEBPACK_IMPORTED_MODULE_2__chat_menu_chat_menu__["a" /* ChatMenuPage */];
@@ -540,7 +629,7 @@ var TabsPage = (function () {
 
 /***/ }),
 
-/***/ 160:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -575,7 +664,7 @@ var ContactPage = (function () {
 
 /***/ }),
 
-/***/ 161:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -610,7 +699,7 @@ var AboutPage = (function () {
 
 /***/ }),
 
-/***/ 205:
+/***/ 212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -655,7 +744,7 @@ var ChatConfigPage = (function () {
 
 /***/ }),
 
-/***/ 206:
+/***/ 213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -700,7 +789,7 @@ var ChatContatosPage = (function () {
 
 /***/ }),
 
-/***/ 207:
+/***/ 214:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -745,7 +834,7 @@ var FerramentasGravadorPage = (function () {
 
 /***/ }),
 
-/***/ 208:
+/***/ 215:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -790,7 +879,7 @@ var FerramentasLanternaPage = (function () {
 
 /***/ }),
 
-/***/ 209:
+/***/ 216:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -835,7 +924,7 @@ var FerramentasPanicoPage = (function () {
 
 /***/ }),
 
-/***/ 210:
+/***/ 217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -880,7 +969,7 @@ var GeoConfigPage = (function () {
 
 /***/ }),
 
-/***/ 211:
+/***/ 218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -925,13 +1014,13 @@ var GeoPage = (function () {
 
 /***/ }),
 
-/***/ 212:
+/***/ 219:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(243);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -939,35 +1028,39 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 236:
+/***/ 243:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_introducao_introducao__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_cadastro_menu_cadastro_menu__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_chat_chat__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_chat_config_chat_config__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_chat_contatos_chat_contatos__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_chat_menu_chat_menu__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_noticias_menu_noticias_menu__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_ferramentas_gravador_ferramentas_gravador__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_ferramentas_lanterna_ferramentas_lanterna__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_ferramentas_menu_ferramentas_menu__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_ferramentas_panico_ferramentas_panico__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_geo_geo__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_geo_config_geo_config__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_geo_menu_geo_menu__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_noticias_noticias__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_about_about__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_contact_contact__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_tabs_tabs__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_introducao_introducao__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_cadastro_menu_cadastro_menu__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_chat_chat__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_chat_config_chat_config__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_chat_contatos_chat_contatos__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_chat_menu_chat_menu__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_noticias_menu_noticias_menu__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_ferramentas_gravador_ferramentas_gravador__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_ferramentas_lanterna_ferramentas_lanterna__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_ferramentas_menu_ferramentas_menu__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_ferramentas_panico_ferramentas_panico__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_geo_geo__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_geo_menu_geo_menu__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_geo_config_geo_config__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_noticias_noticias__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angularfire2__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_signup_signup__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_angularfire2_database__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_user_service_user_service__ = __webpack_require__(344);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -998,6 +1091,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+ //Configurando Firebase Database
+
+//import { AngularFireModule, FirebaseAppConfig } from 'angularfire2';
+
+//import { UserService } from '../providers/user/user.service';
+
+//Configurando Firebase Database
+var firebaseAppConfig = {
+    apiKey: "AIzaSyClmAFjCmu7FHeFDg3pW5xjS-45nXk_wMA",
+    authDomain: "chat01-a91de.firebaseapp.com",
+    databaseURL: "https://chat01-a91de.firebaseio.com",
+    //projectId: "chat01-a91de",
+    storageBucket: "chat01-a91de.appspot.com",
+    messagingSenderId: "958990028732" //para trabalhar com  Cloud Message 
+};
 var AppModule = (function () {
     function AppModule() {
     }
@@ -1021,11 +1129,14 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_18__pages_ferramentas_menu_ferramentas_menu__["a" /* FerramentasMenuPage */],
                 __WEBPACK_IMPORTED_MODULE_19__pages_ferramentas_panico_ferramentas_panico__["a" /* FerramentasPanicoPage */],
                 __WEBPACK_IMPORTED_MODULE_20__pages_geo_geo__["a" /* GeoPage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_geo_config_geo_config__["a" /* GeoConfigPage */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_geo_menu_geo_menu__["a" /* GeoMenuPage */]
+                __WEBPACK_IMPORTED_MODULE_22__pages_geo_config_geo_config__["a" /* GeoConfigPage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_geo_menu_geo_menu__["a" /* GeoMenuPage */],
+                __WEBPACK_IMPORTED_MODULE_25__pages_signup_signup__["a" /* SignupPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_24_angularfire2__["a" /* AngularFireModule */].initializeApp(firebaseAppConfig),
+                __WEBPACK_IMPORTED_MODULE_26_angularfire2_database__["b" /* AngularFireDatabaseModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/cadastro-menu/cadastro-menu.module#CadastroMenuPageModule', name: 'CadastroMenuPage', segment: 'cadastro-menu', priority: 'low', defaultHistory: [] },
@@ -1042,7 +1153,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/geo/geo.module#GeoPageModule', name: 'GeoPage', segment: 'geo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/introducao/introducao.module#IntroducaoPageModule', name: 'IntroducaoPage', segment: 'introducao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/noticias-menu/noticias-menu.module#NoticiasMenuPageModule', name: 'NoticiasMenuPage', segment: 'noticias-menu', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/noticias/noticias.module#NoticiasPageModule', name: 'NoticiasPage', segment: 'noticias', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/noticias/noticias.module#NoticiasPageModule', name: 'NoticiasPage', segment: 'noticias', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -1065,13 +1177,15 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_18__pages_ferramentas_menu_ferramentas_menu__["a" /* FerramentasMenuPage */],
                 __WEBPACK_IMPORTED_MODULE_19__pages_ferramentas_panico_ferramentas_panico__["a" /* FerramentasPanicoPage */],
                 __WEBPACK_IMPORTED_MODULE_20__pages_geo_geo__["a" /* GeoPage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_geo_config_geo_config__["a" /* GeoConfigPage */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_geo_menu_geo_menu__["a" /* GeoMenuPage */]
+                __WEBPACK_IMPORTED_MODULE_22__pages_geo_config_geo_config__["a" /* GeoConfigPage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_geo_menu_geo_menu__["a" /* GeoMenuPage */],
+                __WEBPACK_IMPORTED_MODULE_25__pages_signup_signup__["a" /* SignupPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__["a" /* SplashScreen */],
-                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
+                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] },
+                __WEBPACK_IMPORTED_MODULE_27__providers_user_service_user_service__["a" /* UserServiceProvider */]
             ]
         })
     ], AppModule);
@@ -1082,16 +1196,16 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 279:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_introducao_introducao__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_introducao_introducao__ = __webpack_require__(51);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1120,24 +1234,74 @@ var MyApp = (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\Gardiz\Documents\Programas\Para desenvolvimento Ionic\Projetos Ionic\ionicChat\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
 
-/***/ 50:
+/***/ 344:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__ = __webpack_require__(428);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+ //para Firebase
+var UserServiceProvider = (function () {
+    function UserServiceProvider(db //para Firebase
+        //, public afAuth: AngularFireAuth //para Firebase
+        //, public db: AngularFireDatabase //para Firebase
+        //, public firebaseApp: FirebaseApp //para Firebase
+    ) {
+        this.db = db; //para Firebase
+        console.log('Hello UserServiceProvider Provider');
+    }
+    //O PROBLEMA QUE SEMPRE SOBRESCREVE O VALOR NO bd
+    UserServiceProvider.prototype.create = function (user) {
+        return this.db.object('/users')
+            .set(user)
+            .catch();
+        // create(user: User, uuid: string): Promise<void> {
+        // return this.db.object(`/users/${uuid}`)
+        // .set(user)
+        // .catch();
+    };
+    UserServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */] //para Firebase
+             !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */] //para Firebase
+            ) === "function" && _a || Object])
+    ], UserServiceProvider);
+    return UserServiceProvider;
+    var _a;
+}());
+
+//# sourceMappingURL=user-service.js.map
+
+/***/ }),
+
+/***/ 51:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IntroducaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs_tabs__ = __webpack_require__(161);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1180,5 +1344,5 @@ var IntroducaoPage = (function () {
 
 /***/ })
 
-},[212]);
+},[219]);
 //# sourceMappingURL=main.js.map
